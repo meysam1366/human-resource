@@ -5,7 +5,7 @@ use App\Http\Controllers\PersonalInfoController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return to_route('personal-info.create');
 });
 
 Route::get('/dashboard', function () {
