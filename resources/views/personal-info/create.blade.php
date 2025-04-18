@@ -210,7 +210,7 @@
                     <div class="mb-4">
                         <label class="form-label">صفحات شناسنامه (حداکثر ۵ فایل)</label>
                         <div class="d-flex align-items-center">
-                            <input type="file" id="idCard" name="idCard" multiple accept="image/*" class="d-none">
+                            <input type="file" id="idCard" name="idCard[]" multiple accept="image/*" class="d-none">
                             <button type="button" class="btn file-upload-btn me-3" id="idCardBtn">
                                 <i class="fas fa-images me-2"></i>انتخاب فایل‌ها
                             </button>
@@ -223,7 +223,7 @@
                     <div class="mb-4">
                         <label class="form-label">مدارک تحصیلی (حداکثر ۳ فایل)</label>
                         <div class="d-flex align-items-center">
-                            <input type="file" id="educationDocs" name="educationDocs" multiple accept="image/*" class="d-none">
+                            <input type="file" id="educationDocs" name="educationDocs[]" multiple accept="image/*" class="d-none">
                             <button type="button" class="btn file-upload-btn me-3" id="educationDocsBtn">
                                 <i class="fas fa-graduation-cap me-2"></i>انتخاب فایل‌ها
                             </button>
@@ -342,9 +342,7 @@
                         `);
                     }
                     reader.readAsDataURL(files[i]);
-                    console.log(files, files[i])
                 }
-                console.log(files)
             } else {
                 $('#idCardFilesCount').text('هیچ فایلی انتخاب نشده است');
             }

@@ -37,11 +37,11 @@ class StorePersonalInfoRequest extends FormRequest
 //            'birth_place' => 'required|exists:cities,id',
             'birth_date' => 'required',
             'photo' => 'required|image|mimes:jpeg,png,jpg|max:2048|dimensions:ratio=3/4',
-            'nationalCard' => 'required|image|mimes:jpeg,png,jpg|max:2048',
-            'idCard' => 'nullable|max:5',
-            'idCard.*' => 'image|mimes:jpeg,png,jpg|max:2048',
-            'educationDocs' => 'nullable|max:3',
-            'educationDocs.*' => 'image|mimes:jpeg,png,jpg|max:2048'
+//            'nationalCard' => 'required|image|mimes:jpeg,png,jpg|max:2048',
+//            'idCard' => 'nullable|max:5',
+//            'idCard.*' => 'image|mimes:jpeg,png,jpg|max:2048',
+//            'educationDocs' => 'nullable|max:3',
+//            'educationDocs.*' => 'image|mimes:jpeg,png,jpg|max:2048'
         ];
     }
 

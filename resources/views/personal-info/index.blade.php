@@ -31,16 +31,16 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                                @foreach($infos as $info)
+                            @foreach($infos as $info)
+                                <tr>
                                     <td>{{ $loop->iteration }}</td>
                                     <td><a target="_blank" href="{{ env('APP_URL').'/storage/'.$info->documents->where('type', 'photo')->first()->path }}">تصویر پرسنلی</a></td>
                                     <td>{{ $info->first_name . ' ' . $info->last_name }}</td>
                                     <td>{{ $info->national_code }}</td>
                                     <td>{{ $info->id_number }}</td>
                                     <td>{{ $info->created_at }}</td>
-                                @endforeach
-                            </tr>
+                                </tr>
+                            @endforeach
                             </tbody>
                         </table>
                     </div>
