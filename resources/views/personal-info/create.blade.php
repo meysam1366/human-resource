@@ -376,7 +376,11 @@
 
         // Show loading state
         const submitBtn = $(this).find('button[type="submit"]');
+<<<<<<< HEAD
        submitBtn.prop('disabled', true).html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> در حال ارسال...');
+=======
+        // submitBtn.prop('disabled', true).html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> در حال ارسال...');
+>>>>>>> refs/remotes/origin/main
 
         // Form submission
         $('#personalInfoForm').submit(function(e) {
