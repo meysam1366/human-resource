@@ -459,7 +459,7 @@
                         Swal.fire({
                             icon: 'success',
                             title: 'موفق',
-                            text: 'اطلاعات با موفقیت ارسال شد',
+                            text: 'اطلاعات با موفقیت ثبت شد',
                             confirmButtonText: 'باشه'
                         }).then(() => {
                             // Reset form
