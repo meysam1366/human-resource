@@ -449,7 +449,7 @@
 
             // Send AJAX request
             $.ajax({
-                url: {{ route('personal-info.store') }},
+                url: "{{ route('personal-info.store') }}",
                 type: 'POST',
                 data: formData,
                 processData: false,
