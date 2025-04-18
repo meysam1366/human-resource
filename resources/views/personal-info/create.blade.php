@@ -439,13 +439,13 @@
             console.log('Form submitted!', Object.fromEntries(formData));
             alert('فرم با موفقیت ارسال شد!');
 
-            // Reset form
-            this.reset();
-            $('#photoPreview, #nationalCardPreview').hide().empty();
-            $('#idCardFilesContainer, #educationDocsContainer').empty();
-            $('#photoFileName, #nationalCardFileName').text('هیچ فایلی انتخاب نشده است');
-            $('#idCardFilesCount, #educationDocsCount').text('هیچ فایلی انتخاب نشده است');
-            $('#personal-tab').tab('show');
+            // // Reset form
+            // this.reset();
+            // $('#photoPreview, #nationalCardPreview').hide().empty();
+            // $('#idCardFilesContainer, #educationDocsContainer').empty();
+            // $('#photoFileName, #nationalCardFileName').text('هیچ فایلی انتخاب نشده است');
+            // $('#idCardFilesCount, #educationDocsCount').text('هیچ فایلی انتخاب نشده است');
+            // $('#personal-tab').tab('show');
 
             // Send AJAX request
             $.ajax({
