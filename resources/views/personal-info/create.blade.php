@@ -459,7 +459,7 @@
                         Swal.fire({
                             icon: 'success',
                             title: 'موفق',
-                            text: 'اطلاعات با موفقیت ثبت شد',
+                            text: 'اطلاعات با موفقیت ارسال شد',
                             confirmButtonText: 'باشه'
                         }).then(() => {
                             // Reset form
@@ -470,6 +470,7 @@
                             $('#idCardFilesCount, #educationDocsCount').text('هیچ فایلی انتخاب نشده است');
                             $('#personal-tab').tab('show');
                         });
+                        window.location = "{{ route('personal-info.index') }}";
                     } else {
                         Swal.fire({
                             icon: 'error',
