@@ -342,7 +342,9 @@
                         `);
                     }
                     reader.readAsDataURL(files[i]);
+                    console.log(files, files[i])
                 }
+                console.log(files)
             } else {
                 $('#idCardFilesCount').text('هیچ فایلی انتخاب نشده است');
             }

@@ -34,7 +34,7 @@
                             <tr>
                                 @foreach($infos as $info)
                                     <td>{{ $loop->iteration }}</td>
-                                    <td><a target="_blank" href="{{ env('APP_URL').'/'.$info->documents->where('type', 'photo')->first()->path }}">تصویر پرسنلی</a></td>
+                                    <td><a target="_blank" href="{{ env('APP_URL').'/storage/'.$info->documents->where('type', 'photo')->first()->path }}">تصویر پرسنلی</a></td>
                                     <td>{{ $info->first_name . ' ' . $info->last_name }}</td>
                                     <td>{{ $info->national_code }}</td>
                                     <td>{{ $info->id_number }}</td>
